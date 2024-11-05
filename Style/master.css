@@ -519,6 +519,7 @@ header .container .list .list-bottom {
     display: grid;
     .inner-specs {
       display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
@@ -569,6 +570,11 @@ header .container .list .list-bottom {
   align-items: center;
   align-content: center;
   height: fit-content;
+}
+
+.programs .container #code-snippets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .programs .container .code-snippet {
