@@ -16,29 +16,6 @@ $(document).ready(function () {
   $(".devices .container .select .view-specs").on("click", function () {
     $(".devices .container .select ul.select-specs").slideToggle();
   });
-  // $(window).on("scroll", () => {
-  // if ($(window).width() < 768) {
-  //   $(".devices .container .select .view-specs").on("click", function () {
-  //     $(".devices .container .select ul.select-specs").slideToggle();
-  //     console.log($("body").width());
-  //     $(".devices .container .select ul.select-specs").css({
-  //       display: "none",
-  //       left: "0",
-  //       transform: "translte(0)",
-  //       color: "white",
-  //     });
-  //   });
-  // } else if ($(window).width() > 768) {
-  // $(".devices .container .select .view-specs").preventDefault();
-  // $(".devices .container .select ul.select-specs").css({
-  //   display: "inline",
-  //   left: "0",
-  //   transform: "translte(0)",
-  //   color: "green",
-  // });
-  // });
-  // }
-  // });
 
   // Laptop Objects
   const laptops = [
@@ -896,7 +873,6 @@ $(document).ready(function () {
   let date = new Date();
   $("footer").prepend(date.getFullYear());
 
-  // Components
   // Scroll To Top Button
   let scrollToTop = $(".scroll-to-top");
 
@@ -921,6 +897,9 @@ $(document).ready(function () {
         color: "white",
         backgroundColor: "black",
       });
+      $(".programs .container .text-prog").css({
+        color: "white",
+      });
       $(".note .container").css("color", "#fff");
       $("header .links li a").css("color", "white");
       $("header .links li").hover(
@@ -943,6 +922,9 @@ $(document).ready(function () {
       $(".note .container").css({
         color: "black",
         "background-color": "#ff00008a",
+      });
+      $(".programs .container .text-prog").css({
+        color: "black",
       });
       $(".scroll-to-top").css({
         color: "black",
