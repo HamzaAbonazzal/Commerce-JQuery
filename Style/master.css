@@ -193,12 +193,9 @@ header .container .list .list-bottom {
 /* End Header */
 /* Start Home */
 .home {
-  /* background-image: url("../images/Home.jpg"); */
   background-image: url("../images/Home.jpg");
-  /* background-image: url('../images/white-back.jpg'); */
   background-size: cover;
   min-height: 80vh;
-  /* color: white; */
   color: white;
   position: relative;
 }
@@ -207,7 +204,6 @@ header .container .list .list-bottom {
   left: 30%;
   top: 100px;
   transform: translate(-50%);
-  /* background-color: #00009163; */
   background-color: #000620;
   color: white;
   padding: 20px;
@@ -241,9 +237,6 @@ header .container .list .list-bottom {
   z-index: 8999;
   cursor: pointer;
 }
-/* .home .transform-dark:hover {
-  transform: rotate(180deg);
-} */
 .home #transform-dark.dark {
   background-color: white;
 }
@@ -526,8 +519,7 @@ header .container .list .list-bottom {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .devices .container .specs .specs-laptop {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: block;
     .inner-specs {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -535,7 +527,6 @@ header .container .list .list-bottom {
   }
 }
 /* End Gallery */
-
 /* Programs */
 .programs {
   padding-top: 20px;
