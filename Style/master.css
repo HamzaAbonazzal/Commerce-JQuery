@@ -431,13 +431,12 @@ header .container .list .list-bottom {
 }
 .devices .container .specs .specs-laptop .inner-specs {
   background-color: transparent;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: block;
   width: 100%;
   padding: 5px;
 }
 .devices .container .specs .specs-laptop .inner-specs .spec {
-  display: flex;
+  display: block;
   padding: 5px;
   gap: 10px;
 }
@@ -505,21 +504,28 @@ header .container .list .list-bottom {
   .devices .container .select ul.select-specs {
     width: 100%;
   }
+  .devices .container .specs .specs-laptop .inner-specs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .devices .container .specs .specs-laptop .inner-specs .spec {
+    display: flex;
+  }
 }
 
 @media (max-width: 768px) {
   .devices .container .specs .specs-laptop {
-    display: grid;
+    display: block;
     .inner-specs {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
+      display: block;
     }
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .devices .container .specs .specs-laptop {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     .inner-specs {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -527,6 +533,7 @@ header .container .list .list-bottom {
   }
 }
 /* End Gallery */
+
 /* Programs */
 .programs {
   padding-top: 20px;
@@ -561,11 +568,6 @@ header .container .list .list-bottom {
   align-items: center;
   align-content: center;
   height: fit-content;
-}
-
-.programs .container #code-snippets {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 }
 
 .programs .container .code-snippet {
