@@ -516,9 +516,9 @@ header .container .list .list-bottom {
 
 @media (max-width: 768px) {
   .devices .container .specs .specs-laptop {
-    display: inline-block;
+    display: grid;
     .inner-specs {
-      display: inline-block;
+      display: grid;
     }
   }
 }
